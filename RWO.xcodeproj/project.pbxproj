@@ -1,0 +1,851 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9967D59A2D6C0DC500102B2C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9967D5812D6C0D5900102B2C /* WidgetKit.framework */; };
+		9967D59B2D6C0DC500102B2C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9967D5832D6C0D5900102B2C /* SwiftUI.framework */; };
+		9967D5A42D6C0DC700102B2C /* PriceFeedExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9967D5992D6C0DC500102B2C /* PriceFeedExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		998E86832D6ACC9000C602E9 /* RWO Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 998E86822D6ACC9000C602E9 /* RWO Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9967D5A22D6C0DC700102B2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 998E86762D6ACC9000C602E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9967D5982D6C0DC500102B2C;
+			remoteInfo = PriceFeedExtension;
+		};
+		998E86842D6ACC9000C602E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 998E86762D6ACC9000C602E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 998E86812D6ACC9000C602E9;
+			remoteInfo = "RWO Watch App";
+		};
+		998E86952D6ACC9200C602E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 998E86762D6ACC9000C602E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 998E86812D6ACC9000C602E9;
+			remoteInfo = "RWO Watch App";
+		};
+		998E869F2D6ACC9200C602E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 998E86762D6ACC9000C602E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 998E86812D6ACC9000C602E9;
+			remoteInfo = "RWO Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9967D5902D6C0D5B00102B2C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9967D5A42D6C0DC700102B2C /* PriceFeedExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		998E86AB2D6ACC9200C602E9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				998E86832D6ACC9000C602E9 /* RWO Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9967D5812D6C0D5900102B2C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		9967D5832D6C0D5900102B2C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		9967D5992D6C0DC500102B2C /* PriceFeedExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PriceFeedExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		998E867C2D6ACC9000C602E9 /* RWO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RWO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		998E86822D6ACC9000C602E9 /* RWO Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RWO Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		998E86942D6ACC9200C602E9 /* RWO Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RWO Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		998E869E2D6ACC9200C602E9 /* RWO Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RWO Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9967D5A52D6C0DC700102B2C /* Exceptions for "PriceFeed" folder in "PriceFeedExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 9967D5982D6C0DC500102B2C /* PriceFeedExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		9967D59C2D6C0DC500102B2C /* PriceFeed */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9967D5A52D6C0DC700102B2C /* Exceptions for "PriceFeed" folder in "PriceFeedExtension" target */,
+			);
+			path = PriceFeed;
+			sourceTree = "<group>";
+		};
+		998E86862D6ACC9000C602E9 /* RWO Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "RWO Watch App";
+			sourceTree = "<group>";
+		};
+		998E86972D6ACC9200C602E9 /* RWO Watch AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "RWO Watch AppTests";
+			sourceTree = "<group>";
+		};
+		998E86A12D6ACC9200C602E9 /* RWO Watch AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "RWO Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9967D5962D6C0DC500102B2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9967D59B2D6C0DC500102B2C /* SwiftUI.framework in Frameworks */,
+				9967D59A2D6C0DC500102B2C /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		998E867F2D6ACC9000C602E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		998E86912D6ACC9200C602E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		998E869B2D6ACC9200C602E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9967D5802D6C0D5900102B2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9967D5812D6C0D5900102B2C /* WidgetKit.framework */,
+				9967D5832D6C0D5900102B2C /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		998E86752D6ACC9000C602E9 = {
+			isa = PBXGroup;
+			children = (
+				998E86862D6ACC9000C602E9 /* RWO Watch App */,
+				998E86972D6ACC9200C602E9 /* RWO Watch AppTests */,
+				998E86A12D6ACC9200C602E9 /* RWO Watch AppUITests */,
+				9967D59C2D6C0DC500102B2C /* PriceFeed */,
+				9967D5802D6C0D5900102B2C /* Frameworks */,
+				998E867D2D6ACC9000C602E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		998E867D2D6ACC9000C602E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				998E867C2D6ACC9000C602E9 /* RWO.app */,
+				998E86822D6ACC9000C602E9 /* RWO Watch App.app */,
+				998E86942D6ACC9200C602E9 /* RWO Watch AppTests.xctest */,
+				998E869E2D6ACC9200C602E9 /* RWO Watch AppUITests.xctest */,
+				9967D5992D6C0DC500102B2C /* PriceFeedExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9967D5982D6C0DC500102B2C /* PriceFeedExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9967D5A62D6C0DC700102B2C /* Build configuration list for PBXNativeTarget "PriceFeedExtension" */;
+			buildPhases = (
+				9967D5952D6C0DC500102B2C /* Sources */,
+				9967D5962D6C0DC500102B2C /* Frameworks */,
+				9967D5972D6C0DC500102B2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9967D59C2D6C0DC500102B2C /* PriceFeed */,
+			);
+			name = PriceFeedExtension;
+			packageProductDependencies = (
+			);
+			productName = PriceFeedExtension;
+			productReference = 9967D5992D6C0DC500102B2C /* PriceFeedExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		998E867B2D6ACC9000C602E9 /* RWO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 998E86AC2D6ACC9200C602E9 /* Build configuration list for PBXNativeTarget "RWO" */;
+			buildPhases = (
+				998E867A2D6ACC9000C602E9 /* Resources */,
+				998E86AB2D6ACC9200C602E9 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				998E86852D6ACC9000C602E9 /* PBXTargetDependency */,
+			);
+			name = RWO;
+			packageProductDependencies = (
+			);
+			productName = RWO;
+			productReference = 998E867C2D6ACC9000C602E9 /* RWO.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		998E86812D6ACC9000C602E9 /* RWO Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 998E86A82D6ACC9200C602E9 /* Build configuration list for PBXNativeTarget "RWO Watch App" */;
+			buildPhases = (
+				998E867E2D6ACC9000C602E9 /* Sources */,
+				998E867F2D6ACC9000C602E9 /* Frameworks */,
+				998E86802D6ACC9000C602E9 /* Resources */,
+				9967D5902D6C0D5B00102B2C /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9967D5A32D6C0DC700102B2C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				998E86862D6ACC9000C602E9 /* RWO Watch App */,
+			);
+			name = "RWO Watch App";
+			packageProductDependencies = (
+			);
+			productName = "RWO Watch App";
+			productReference = 998E86822D6ACC9000C602E9 /* RWO Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		998E86932D6ACC9200C602E9 /* RWO Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 998E86AF2D6ACC9200C602E9 /* Build configuration list for PBXNativeTarget "RWO Watch AppTests" */;
+			buildPhases = (
+				998E86902D6ACC9200C602E9 /* Sources */,
+				998E86912D6ACC9200C602E9 /* Frameworks */,
+				998E86922D6ACC9200C602E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				998E86962D6ACC9200C602E9 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				998E86972D6ACC9200C602E9 /* RWO Watch AppTests */,
+			);
+			name = "RWO Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "RWO Watch AppTests";
+			productReference = 998E86942D6ACC9200C602E9 /* RWO Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		998E869D2D6ACC9200C602E9 /* RWO Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 998E86B22D6ACC9200C602E9 /* Build configuration list for PBXNativeTarget "RWO Watch AppUITests" */;
+			buildPhases = (
+				998E869A2D6ACC9200C602E9 /* Sources */,
+				998E869B2D6ACC9200C602E9 /* Frameworks */,
+				998E869C2D6ACC9200C602E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				998E86A02D6ACC9200C602E9 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				998E86A12D6ACC9200C602E9 /* RWO Watch AppUITests */,
+			);
+			name = "RWO Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "RWO Watch AppUITests";
+			productReference = 998E869E2D6ACC9200C602E9 /* RWO Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		998E86762D6ACC9000C602E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					9967D5982D6C0DC500102B2C = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					998E867B2D6ACC9000C602E9 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					998E86812D6ACC9000C602E9 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					998E86932D6ACC9200C602E9 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 998E86812D6ACC9000C602E9;
+					};
+					998E869D2D6ACC9200C602E9 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 998E86812D6ACC9000C602E9;
+					};
+				};
+			};
+			buildConfigurationList = 998E86792D6ACC9000C602E9 /* Build configuration list for PBXProject "RWO" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 998E86752D6ACC9000C602E9;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 998E867D2D6ACC9000C602E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				998E867B2D6ACC9000C602E9 /* RWO */,
+				998E86812D6ACC9000C602E9 /* RWO Watch App */,
+				998E86932D6ACC9200C602E9 /* RWO Watch AppTests */,
+				998E869D2D6ACC9200C602E9 /* RWO Watch AppUITests */,
+				9967D5982D6C0DC500102B2C /* PriceFeedExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9967D5972D6C0DC500102B2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		998E867A2D6ACC9000C602E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		998E86802D6ACC9000C602E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		998E86922D6ACC9200C602E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		998E869C2D6ACC9200C602E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9967D5952D6C0DC500102B2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		998E867E2D6ACC9000C602E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		998E86902D6ACC9200C602E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		998E869A2D6ACC9200C602E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9967D5A32D6C0DC700102B2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9967D5982D6C0DC500102B2C /* PriceFeedExtension */;
+			targetProxy = 9967D5A22D6C0DC700102B2C /* PBXContainerItemProxy */;
+		};
+		998E86852D6ACC9000C602E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 998E86812D6ACC9000C602E9 /* RWO Watch App */;
+			targetProxy = 998E86842D6ACC9000C602E9 /* PBXContainerItemProxy */;
+		};
+		998E86962D6ACC9200C602E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 998E86812D6ACC9000C602E9 /* RWO Watch App */;
+			targetProxy = 998E86952D6ACC9200C602E9 /* PBXContainerItemProxy */;
+		};
+		998E86A02D6ACC9200C602E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 998E86812D6ACC9000C602E9 /* RWO Watch App */;
+			targetProxy = 998E869F2D6ACC9200C602E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9967D5A72D6C0DC700102B2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 97N6GR4YEK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PriceFeed/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PriceFeed;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = retardio.exposed.RWO.watchkitapp.PriceFeed;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		9967D5A82D6C0DC700102B2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 97N6GR4YEK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PriceFeed/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PriceFeed;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = retardio.exposed.RWO.watchkitapp.PriceFeed;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+		998E86A62D6ACC9200C602E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		998E86A72D6ACC9200C602E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		998E86A92D6ACC9200C602E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RWO Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 97N6GR4YEK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RWO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = retardio.exposed.RWO.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		998E86AA2D6ACC9200C602E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RWO Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 97N6GR4YEK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RWO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = retardio.exposed.RWO.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+		998E86AD2D6ACC9200C602E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 97N6GR4YEK;
+				INFOPLIST_KEY_CFBundleDisplayName = RWO;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = retardio.exposed.RWO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		998E86AE2D6ACC9200C602E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 97N6GR4YEK;
+				INFOPLIST_KEY_CFBundleDisplayName = RWO;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = retardio.exposed.RWO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		998E86B02D6ACC9200C602E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 97N6GR4YEK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "retardio.exposed.RWO-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RWO Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RWO Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		998E86B12D6ACC9200C602E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 97N6GR4YEK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "retardio.exposed.RWO-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RWO Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RWO Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+		998E86B32D6ACC9200C602E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 97N6GR4YEK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "retardio.exposed.RWO-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "RWO Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		998E86B42D6ACC9200C602E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 97N6GR4YEK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "retardio.exposed.RWO-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "RWO Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9967D5A62D6C0DC700102B2C /* Build configuration list for PBXNativeTarget "PriceFeedExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9967D5A72D6C0DC700102B2C /* Debug */,
+				9967D5A82D6C0DC700102B2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		998E86792D6ACC9000C602E9 /* Build configuration list for PBXProject "RWO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				998E86A62D6ACC9200C602E9 /* Debug */,
+				998E86A72D6ACC9200C602E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		998E86A82D6ACC9200C602E9 /* Build configuration list for PBXNativeTarget "RWO Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				998E86A92D6ACC9200C602E9 /* Debug */,
+				998E86AA2D6ACC9200C602E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		998E86AC2D6ACC9200C602E9 /* Build configuration list for PBXNativeTarget "RWO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				998E86AD2D6ACC9200C602E9 /* Debug */,
+				998E86AE2D6ACC9200C602E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		998E86AF2D6ACC9200C602E9 /* Build configuration list for PBXNativeTarget "RWO Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				998E86B02D6ACC9200C602E9 /* Debug */,
+				998E86B12D6ACC9200C602E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		998E86B22D6ACC9200C602E9 /* Build configuration list for PBXNativeTarget "RWO Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				998E86B32D6ACC9200C602E9 /* Debug */,
+				998E86B42D6ACC9200C602E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 998E86762D6ACC9000C602E9 /* Project object */;
+}
