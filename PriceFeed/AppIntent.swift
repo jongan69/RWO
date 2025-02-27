@@ -33,6 +33,8 @@ struct ConfigurationAppIntent: WidgetConfigurationIntent {
     @Parameter(title: "Display Format", default: .both)
     var displayFormat: PriceDisplayOption
 
-    @Parameter(title: "Refresh Interval (Minutes)", default: 15)
+    @Parameter(title: "Refresh Interval (Minutes)", default: 10)
     var refreshInterval: Int
 }
+
+

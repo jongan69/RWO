@@ -2,11 +2,12 @@ import WidgetKit
 import SwiftUI
 import AppIntents
 
-// Fetch data asynchronously
+// Function to fetch data asynchronously
 func fetchComplicationData(displayFormat: PriceDisplayOption) async -> String {
     guard let url = URL(string: "https://www.retardio.exposed/api/combined") else {
-        return "--"
+        return "Invalid URL"
     }
+    
     do {
         let (data, _) = try await URLSession.shared.data(from: url)
         let decodedData = try JSONDecoder().decode(RetardioResponse.self, from: data)
@@ -20,37 +21,27 @@ func fetchComplicationData(displayFormat: PriceDisplayOption) async -> String {
             return decodedData.uiFloorFormatted
         }
     } catch {
-        return "--"
+        return "Error: \(error.localizedDescription)"
     }
 }
 
 // Widget provider
 struct RWOComplicationProvider: AppIntentTimelineProvider {
     func recommendations() -> [AppIntentRecommendation<ConfigurationAppIntent>] {
-        [
-            AppIntentRecommendation(
-                intent: ConfigurationAppIntent(
-                    displayFormat: IntentParameter(title: "Display Format", default: .sol),
-                    refreshInterval: IntentParameter(title: "Refresh Interval", default: 10)
-                ),
-                description: "Display price in SOL"
-            ),
-            AppIntentRecommendation(
-                intent: ConfigurationAppIntent(
-                    displayFormat: IntentParameter(title: "Display Format", default: .usd),
-                    refreshInterval: IntentParameter(title: "Refresh Interval", default: 10)
-                ),
-                description: "Display price in USD"
-            ),
-            AppIntentRecommendation(
-                intent: ConfigurationAppIntent(
-                    displayFormat: IntentParameter(title: "Display Format", default: .both),
-                    refreshInterval: IntentParameter(title: "Refresh Interval", default: 10)
-                ),
-                description: "Display SOL & USD (Default)"
-            )
-        ]
+        return PriceDisplayOption.allCases.map { format in
+            let intent = ConfigurationAppIntent()
+            intent.displayFormat = format // Assign directly
+            intent.refreshInterval = 10   // Assign directly
+
+            return AppIntentRecommendation(intent: intent, description: Text(format.rawValue))
+        }
     }
+
+
+
+
+
+
 
 
     
@@ -74,8 +65,8 @@ struct RWOComplicationProvider: AppIntentTimelineProvider {
         let latestData = await fetchComplicationData(displayFormat: configuration.displayFormat)
         let entry = SimpleEntry(date: Date(), value: latestData, configuration: configuration)
         
-        // Apply user-defined refresh interval
-        let nextUpdate = Calendar.current.date(byAdding: .minute, value: configuration.refreshInterval, to: Date())!
+        let nextUpdate = Calendar.current.date(byAdding: .minute, value: configuration.refreshInterval, to: Date()) ?? Date().addingTimeInterval(600)
+        
         return Timeline(entries: [entry], policy: .after(nextUpdate))
     }
 }

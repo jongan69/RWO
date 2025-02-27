@@ -39,11 +39,28 @@ struct ContentView: View {
                         StatRow(title: "Floor Price", value: data.uiFloorFormatted)
                         StatRow(title: "Coin Price", value: data.uiQuoteFormatted)
                     } else if let errorMessage = apiService.errorMessage {
-                        Text(errorMessage)
-                            .foregroundColor(.red)
-                            .font(.system(size: 12))
-                            .multilineTextAlignment(.center)
-                            .padding(.horizontal, 5)
+                        VStack(spacing: 8) {
+                            Text(errorMessage)
+                                .foregroundColor(.red)
+                                .font(.system(size: 12))
+                                .multilineTextAlignment(.center)
+                                .padding(.horizontal, 5)
+                            
+                            Button(action: {
+                                Task {
+                                    await apiService.fetchData()
+                                    updateComplications()
+                                }
+                            }) {
+                                Text("Retry")
+                                    .font(.system(size: 14, weight: .bold))
+                                    .foregroundColor(.white)
+                                    .padding(.horizontal, 16)
+                                    .padding(.vertical, 8)
+                                    .background(Color.red)
+                                    .cornerRadius(8)
+                            }
+                        }
                     } else {
                         ProgressView("Fetching Data...")
                             .progressViewStyle(CircularProgressViewStyle(tint: .white))
